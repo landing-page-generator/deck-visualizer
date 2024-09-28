@@ -6,13 +6,12 @@ import { useRouter } from "next/router"
 import Link from "next/link"
 
 export const CTA = (props: CTAPRops) => {
-    const { link, headline, color, logoURL, homepage } = props
+    const { link, headline, color, logoURL, homepageLink } = props
 
     const router = useRouter()
 
     return (
         <div className={styles.container}>
-            <img src={logoURL} alt="Logo" width={400} height={50} />
             <p className={styles.headline} style={{ color }}>
                 {headline}
             </p>
@@ -25,8 +24,8 @@ export const CTA = (props: CTAPRops) => {
             >
                 GET STARTED
             </button>
-            <Link href={homepage} className={styles.url}>
-                {homepage}
+            <Link href={homepageLink} className={styles.url}>
+                {homepageLink}
             </Link>
         </div>
     )
