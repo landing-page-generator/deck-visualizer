@@ -1,19 +1,70 @@
 .container {
+    height: 678px;
+    display: flex;
+    background: white;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.header {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 140px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.features {
+    display: flex;
+    column-gap: 30px;
+    padding: 0 50px;
+}
+
+.emoji {
+    font-size: 50px;
 }
 
 .title {
-
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-weight: 600;
 }
 
-.featureContainer {
-
+.feature {
+    flex: 1;
+    background: white;
+    padding: 20px;
 }
 
 .featureTitle {
-
+    font-size: 22px;
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-weight: 600;
 }
 
 .featureDescription {
+    font-size: 18px;
+    line-height: 150%;
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-weight: 300;
+}
 
+.ribbon {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 10px;
+    z-index: 100;
 }

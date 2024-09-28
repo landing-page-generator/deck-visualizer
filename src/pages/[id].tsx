@@ -15,6 +15,12 @@ const Page = () => {
             "https://www.offsight.com/_next/static/media/logo.18dc692d.svg",
         list: [
             {
+                type: "HERO",
+                title: "Empowering Firefighters with Cutting-Edge Technology",
+                subtitle: "Sundai's Solutions for Safer and More Efficient Firefighting Operations",
+                imageURL: "https://images.pexels.com/photos/4770634/pexels-photo-4770634.jpeg"
+            },
+            {
                 type: "CTA",
                 component: {
                     color: "#6fd7ef",

@@ -1,15 +1,29 @@
 .container {
-
+    height: 678px;
+    display: flex;
+    background: white;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.benefitContainer {
-
+.header {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.benefitTitle {
-
+.logo {
+    width: 140px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.benefitDescription {
-
+.features {
+    display: flex;
+    column-gap: 30px;
+    padding: 0 50px;
 }
