@@ -8,6 +8,9 @@ import Link from "next/link"
 export const CTA = (props: CTAPRops) => {
     const { link, headline, color, logoURL, homepageLink } = props
 
+
+    console.log(props)
+
     const router = useRouter()
 
     return (

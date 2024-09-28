@@ -185,8 +185,9 @@ export const Deck = () => {
             {
                 type: "CTA",
                 headline: "Experience CaiRO in Action",
+
                 description: '',
-                link: "https://example.com/contact",
+                homepageLink: "https://example.com/contact",
             },
         ],
     }
@@ -251,8 +252,8 @@ export const Deck = () => {
                     switch (item.type) {
                         case "HERO":
                             return <Hero {...item.component} {...item} />
-                        // case "CTA":
-                        //     return <CTA {...item.component} {...item} />
+                        case "CTA":
+                            return <CTA {...item.component} {...item} />
                         case "BENEFITS":
                             return <Benefits {...item.component} {...item} />
                         case "EXPLANATION":
