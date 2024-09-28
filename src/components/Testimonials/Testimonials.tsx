@@ -23,9 +23,11 @@ export const Testimonials = (props: TestimonialProps) => {
             </div>
             <div className={styles.cards}>
                 {testimonials.map((explanation, index) => {
+
+                    const finalGender = explanation.gender === "male" ? "men" : "women"
                     return (
                         <div className={styles.card} key={index}>
-                            <img className={styles.profile} src={`https://randomuser.me/api/portraits/men/${getRandomNumber()}.jpg`}></img>
+                            <img className={styles.profile} src={`https://randomuser.me/api/portraits/${finalGender}/${getRandomNumber()}.jpg`}></img>
                             <p className={styles.explanationTitle}>
                                 {explanation.testimonial}
                             </p>

@@ -79,11 +79,13 @@
             "type": "TESTIMONIALS",
             "testimonials": [
                 {
+                    "gender": "female",
                     "firstName": "Jane",
                     "lastName": "Doe",
                     "testimonial": "Sundai's solutions have significantly improved our response times and overall safety. Highly recommend!"
                 },
                 {
+                    "gender": "male",
                     "firstName": "Michael",
                     "lastName": "Johnson",
                     "testimonial": "The real-time data integration has been a game-changer for our team. We can't imagine working without it now."
