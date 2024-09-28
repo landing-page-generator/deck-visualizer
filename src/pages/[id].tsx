@@ -8,26 +8,23 @@ import { SchemaType } from "@/shared/types"
 
 import styles from "./styles.module.css"
 
+import sample from './schema.json'
+
 const Page = () => {
     const data: SchemaType = {
-        color: "#6fd7ef",
-        logoURL:
-            "https://www.offsight.com/_next/static/media/logo.18dc692d.svg",
-        list: [
-            {
-                type: "CTA",
+        color: sample.color,
+        logoURL: sample.logoURL, // @ts-expect-error
+        list: sample.list.map((item) => {
+            return {
+                ...item,
                 component: {
-                    color: "#6fd7ef",
-                    logoURL:
-                        "https://www.offsight.com/_next/static/media/logo.18dc692d.svg",
-                    link: "https://www.offsight.com",
-                    url: "https://www.offsight.com",
-                    headline: "Unlock the Power of Sentiment Analysis",
-                    description: "Start your free trial today",
+                    ...item,
+                    logoURL: sample.logoURL,
                 },
-            },
-        ],
+            }
+        })
     }
+
     return (
         <div className={styles.root}>
             <div className={styles.container}>
@@ -38,14 +35,12 @@ const Page = () => {
                                 <Hero
                                     {...item.component}
                                     {...item}
-                                    logoURL={data.logoURL}
                                 />
                             )
                         case "CTA":
                             return (
                                 <CTA
                                     {...item.component}
-                                    logoURL={data.logoURL}
                                     {...item}
                                 />
                             )
@@ -53,7 +48,6 @@ const Page = () => {
                             return (
                                 <Benefits
                                     {...item.component}
-                                    logoURL={data.logoURL}
                                     {...item}
                                 />
                             )
@@ -61,7 +55,6 @@ const Page = () => {
                             return (
                                 <Explanation
                                     {...item.component}
-                                    logoURL={data.logoURL}
                                     {...item}
                                 />
                             )
@@ -69,7 +62,6 @@ const Page = () => {
                             return (
                                 <Features
                                     {...item.component}
-                                    logoURL={data.logoURL}
                                     {...item}
                                 />
                             )
@@ -77,7 +69,6 @@ const Page = () => {
                             return (
                                 <Testimonials
                                     {...item.component}
-                                    logoURL={data.logoURL}
                                     {...item}
                                 />
                             )

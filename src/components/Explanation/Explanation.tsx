@@ -5,7 +5,7 @@ import styles from "./Explanation.module.css"
 import { LEFT_BORDER_WIDTH } from "@/shared/constants"
 
 export const Explanation = (props: ExplanationProps) => {
-    const { explanations, logoURL, color } = props
+    const { steps, logoURL, color } = props
 
     return (
         <div
@@ -19,17 +19,17 @@ export const Explanation = (props: ExplanationProps) => {
                 <Image src={logoURL} alt="Logo" width={400} height={50} />
             </div>
             <div className={styles.cards}>
-                {explanations.map((explanation, index) => {
+                {steps.map((step, index) => {
                     return (
                         <div className={styles.card} key={index}>
-                            <p className={styles.emoji}>{explanation.emoji}</p>
+                            <p className={styles.emoji}>{step.emoji}</p>
                             <p className={styles.explanationTitle}>
                                 {index + 1}
                                 {". "}
-                                {explanation.title}
+                                {step.title}
                             </p>
                             <p className={styles.explanationDescription}>
-                                {explanation.description}
+                                {step.description}
                             </p>
                         </div>
                     )

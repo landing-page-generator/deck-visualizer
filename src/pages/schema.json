@@ -1,0 +1,105 @@
+{
+    "logoURL": "https://www.offsight.com/_next/static/media/logo.18dc692d.svg",
+    "color": "#6fd7ef",
+    "list": [
+        {
+            "type": "HERO",
+            "title": "Empowering Firefighters with Cutting-Edge Technology",
+            "subtitle": "Sundai's Solutions for Safer and More Efficient Firefighting Operations",
+            "imageURL": "https://images.pexels.com/photos/4770634/pexels-photo-4770634.jpeg"
+        },
+        {
+            "type": "FEATURES",
+            "title": "Key Features for Firefighters",
+            "features": [
+                {
+                    "title": "Real-Time Data Integration",
+                    "emoji": "🔥",
+                    "description": "Access critical information in real-time to make informed decisions on the field."
+                },
+                {
+                    "title": "Advanced Mapping and Navigation",
+                    "emoji": "🗺️",
+                    "description": "Navigate through complex environments with precision, ensuring safety and efficiency."
+                },
+                {
+                    "title": "Communication Enhancements",
+                    "emoji": "📡",
+                    "description": "Stay connected with your team and command center with reliable and secure communication tools."
+                }
+            ]
+        },
+        {
+            "type": "BENEFITS",
+            "benefits": [
+                {
+                    "name": "Enhanced Safety",
+                    "emoji": "🛡️",
+                    "description": "Reduce risks and improve the safety of your team with advanced technology."
+                },
+                {
+                    "name": "Operational Efficiency",
+                    "emoji": "📈",
+                    "description": "Streamline operations and improve response times with our integrated solutions."
+                },
+                {
+                    "name": "Data-Driven Decisions",
+                    "emoji": "📊",
+                    "description": "Make informed decisions based on real-time data and analytics."
+                },
+                {
+                    "name": "Improved Communication",
+                    "emoji": "🗣️",
+                    "description": "Maintain seamless communication with your team and command center."
+                }
+            ]
+        },
+        {
+            "type": "EXPLANATION",
+            "steps": [
+                {
+                    "title": "Step 1: Onboarding and Training",
+                    "description": "We provide comprehensive onboarding and training to ensure your team is ready to use our solutions effectively.",
+                    "emoji": "📚"
+                },
+                {
+                    "title": "Step 2: Implementation and Integration",
+                    "description": "Our team will work with you to seamlessly integrate our solutions into your existing systems.",
+                    "emoji": "🔧"
+                },
+                {
+                    "title": "Step 3: Support and Optimization",
+                    "description": "We offer ongoing support and optimization to ensure you get the most out of our solutions.",
+                    "emoji": "🤝"
+                }
+            ]
+        },
+        {
+            "type": "TESTIMONIALS",
+            "testimonials": [
+                {
+                    "firstName": "Jane",
+                    "lastName": "Doe",
+                    "testimonial": "Sundai's solutions have significantly improved our response times and overall safety. Highly recommend!"
+                },
+                {
+                    "firstName": "Michael",
+                    "lastName": "Johnson",
+                    "testimonial": "The real-time data integration has been a game-changer for our team. We can't imagine working without it now."
+                },
+                {
+                    "firstName": "Sarah",
+                    "lastName": "Lee",
+                    "testimonial": "The communication enhancements have made a world of difference in our coordination and efficiency."
+                }
+            ]
+        },
+        {
+            "type": "CTA",
+            "headline": "Ready to Transform Your Firefighting Operations?",
+            "description": "Schedule a demo with our team to see how Sundai can benefit your department.",
+            "homepage": "https://example.com",
+            "link": "https://example.com/schedule-demo"
+        }
+    ]
+}
