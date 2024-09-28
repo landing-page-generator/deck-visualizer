@@ -5,5 +5,6 @@ type TestimonialType = {
 }
 
 export type TestimonialProps = {
+    logoURL: string
     testimonials: TestimonialType[]
 }

@@ -5,5 +5,6 @@ type BenefitType = {
 }
 
 export type BenefitsProps = {
+    logoURL: string
     benefits: BenefitType[]
 }

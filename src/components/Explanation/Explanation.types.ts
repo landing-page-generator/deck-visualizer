@@ -5,5 +5,6 @@ type ExplanationType = {
 }
 
 export type ExplanationProps = {
+    logoURL: string
     explanations: ExplanationType[]
 }
