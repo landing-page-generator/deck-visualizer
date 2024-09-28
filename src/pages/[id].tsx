@@ -15,27 +15,15 @@ const Page = () => {
             "https://www.offsight.com/_next/static/media/logo.18dc692d.svg",
         list: [
             {
-                type: "EXPLANATION",
+                type: "CTA",
                 component: {
-                    logoURL: "",
-                    color: '#6fd7ef',
-                    explanations: [
-                        {
-                            emoji: "🚀",
-                            title: "Title 1",
-                            description: "Sentient Insights gathers social media data from various platforms",
-                        },
-                        {
-                            emoji: "🚀",
-                            title: "Title 2",
-                            description: "Sentient Insights gathers social media data from various platforms",
-                        },
-                        {
-                            emoji: "🚀",
-                            title: "Title 3",
-                            description: "Sentient Insights gathers social media data from various platforms",
-                        }
-                    ],
+                    color: "#6fd7ef",
+                    logoURL:
+                        "https://www.offsight.com/_next/static/media/logo.18dc692d.svg",
+                    link: "https://www.offsight.com",
+                    url: "https://www.offsight.com",
+                    headline: "Unlock the Power of Sentiment Analysis",
+                    description: "Start your free trial today",
                 },
             },
         ],

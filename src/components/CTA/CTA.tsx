@@ -1,19 +1,33 @@
-import { CTAPRops } from './CTA.types'
+import { CTAPRops } from "./CTA.types"
+import Image from "next/image"
 
-import styles from './CTA.module.css'
+import styles from "./CTA.module.css"
+import { useRouter } from "next/router"
+import Link from "next/link"
 
 export const CTA = (props: CTAPRops) => {
-    const {
-        link,
-        headline,
-        description
-    } = props
+    const { link, headline, color, logoURL, url } = props
+
+    const router = useRouter()
 
     return (
         <div className={styles.container}>
-            <p className={styles.headline}>{headline}</p>
-            <p className={styles.description}>{description}</p>
-            <a className={styles.link} href={link}>{link}</a>
+            <Image src={logoURL} alt="Logo" width={400} height={50} />
+            <p className={styles.headline} style={{ color }}>
+                {headline}
+            </p>
+            <button
+                style={{ backgroundColor: color }}
+                className={styles.link}
+                onClick={() => {
+                    router.push(link)
+                }}
+            >
+                GET STARTED
+            </button>
+            <Link href={url} className={styles.url}>
+                {url}
+            </Link>
         </div>
     )
 }

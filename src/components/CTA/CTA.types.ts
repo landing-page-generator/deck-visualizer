@@ -1,7 +1,7 @@
-import { Shared } from '@/shared/types'
+import { Shared } from "@/shared/types"
 
 export type CTAPRops = Shared & {
     headline: string
-    description: string
+    url: string
     link: string
 }
