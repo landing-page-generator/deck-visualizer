@@ -36,7 +36,8 @@
 .explanationDescription {
     width: 100%;
     text-align: left;
-    font-size: 20px;
+    font-size:18px;
+    line-height: 150%;
 }
 
 .cards {
@@ -55,7 +56,7 @@
 }
 
 .card {
-    height: 365px;
+    height: auto;
     box-shadow: var(--shadow1);
     border-radius: 47px;
     display: flex;
@@ -63,5 +64,5 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 0 30px;
+    padding: 30px;
 }
