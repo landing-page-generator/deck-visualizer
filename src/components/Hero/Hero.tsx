@@ -14,7 +14,6 @@ export const Hero = (props: HeroProps) => {
                     <div className={styles.title}>{title}</div>
                     <div className={styles.subtitle}>{subtitle}</div>
                 </div>
-
                 <div></div>
             </div>
             <div className={styles.image} style={{

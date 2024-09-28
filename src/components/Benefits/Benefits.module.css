@@ -23,7 +23,63 @@
 }
 
 .features {
-    display: flex;
-    column-gap: 30px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
     padding: 0 50px;
+    gap: 30px;
+}
+
+.feature {
+    flex: 1;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: var(--shadow1);
+    border-radius: 15px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.featureText {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+}
+
+.emoji {
+    font-size: 50px;
+}
+
+.title {
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-weight: 600;
+}
+
+
+.featureTitle {
+    font-size: 22px;
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-weight: 600;
+}
+
+.featureDescription {
+    font-size: 18px;
+    line-height: 150%;
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-weight: 300;
+}
+
+.ribbon {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 10px;
+    z-index: 100;
 }

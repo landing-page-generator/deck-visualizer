@@ -33,42 +33,54 @@ const Page = () => {
                         case "HERO":
                             return (
                                 <Hero
+                                    color={data.color}
                                     {...item.component}
                                     {...item}
+                                    logoURL={data.logoURL}
                                 />
                             )
                         case "CTA":
                             return (
                                 <CTA
+                                    color={data.color}
                                     {...item.component}
+                                    logoURL={data.logoURL}
                                     {...item}
                                 />
                             )
                         case "BENEFITS":
                             return (
                                 <Benefits
+                                    color={data.color}
                                     {...item.component}
+                                    logoURL={data.logoURL}
                                     {...item}
                                 />
                             )
                         case "EXPLANATION":
                             return (
                                 <Explanation
+                                    color={data.color}
                                     {...item.component}
+                                    logoURL={data.logoURL}
                                     {...item}
                                 />
                             )
                         case "FEATURES":
                             return (
                                 <Features
+                                    color={data.color}
                                     {...item.component}
+                                    logoURL={data.logoURL}
                                     {...item}
                                 />
                             )
                         case "TESTIMONIAL":
                             return (
                                 <Testimonials
+                                    color={data.color}
                                     {...item.component}
+                                    logoURL={data.logoURL}
                                     {...item}
                                 />
                             )

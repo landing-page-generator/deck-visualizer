@@ -1,1 +1,1 @@
-export const LEFT_BORDER_WIDTH = 27
+export const LEFT_BORDER_WIDTH = 10
