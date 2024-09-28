@@ -19,7 +19,7 @@ export const Deck = () => {
         const { data: { data }, error } = await supabase
             .from("decks")
             .select("*")
-            .eq("id", router.query.id)
+            .eq("uuid", router.query.id)
             .maybeSingle()
 
         if (error) {
