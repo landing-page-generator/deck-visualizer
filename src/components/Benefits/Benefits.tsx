@@ -10,6 +10,8 @@ export const Benefits = (props: BenefitsProps) => {
         color,
     } = props
 
+        console.log(props)
+
     return (
         <div style={{position: "relative"}}>
         <div className={styles.container}>

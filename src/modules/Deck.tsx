@@ -1,19 +1,21 @@
-import { Benefits } from '@/components/Benefits/Benefits'
-import { CTA } from '@/components/CTA'
-import { Explanation } from '@/components/Explanation'
-import { Features } from '@/components/Features'
-import { Hero } from '@/components/Hero'
-import { Testimonials } from '@/components/Testimonials'
-import { supabase } from '@/shared/supabase'
-import { SchemaType } from '@/shared/types'
-import { useRouter } from 'next/router'
-import { useState, useEffect } from 'react'
+import { Benefits } from "@/components/Benefits/Benefits"
+import { CTA } from "@/components/CTA"
+import { Explanation } from "@/components/Explanation"
+import { Features } from "@/components/Features"
+import { Hero } from "@/components/Hero"
+import { Testimonials } from "@/components/Testimonials"
+import { supabase } from "@/shared/supabase"
+import { SchemaType } from "@/shared/types"
+import { useRouter } from "next/router"
+import { useState, useEffect } from "react"
 
-import styles from './deck.module.css'
+import styles from "./deck.module.css"
 
 export const Deck = () => {
     const router = useRouter()
-    const deck ={
+    const [deck, setDeck] = useState<SchemaType | null>(null)
+
+    const pre = {
         logoURL: "https://example.com/cairo_logo.png",
         color: "#FF5733",
         list: [
@@ -21,27 +23,30 @@ export const Deck = () => {
                 type: "HERO",
                 title: "CaiRO: Your Chief AI Revenue Officer",
                 subtitle: "Revolutionizing Sales Engagement",
-                imageURL: "https://example.com/cairo_logo.png"
+                imageURL: "https://example.com/cairo_logo.png",
             },
             {
                 type: "EXPLANATION",
                 explanations: [
                     {
                         title: "Our Journey",
-                        description: null,
-                        emoji: "🚀"
+                        description: '',
+                        gender: 'male',
+                        emoji: "🚀",
                     },
                     {
                         title: "The CAIRO Project",
-                        description: null,
-                        emoji: "💡"
+                        description: '',
+                        gender: 'male',
+                        emoji: "💡",
                     },
                     {
                         title: "Birth of CaiRO",
-                        description: null,
-                        emoji: "🎉"
-                    }
-                ]
+                        description: '',
+                        gender: 'male',
+                        emoji: "🎉",
+                    },
+                ],
             },
             {
                 type: "PROBLEM",
@@ -49,30 +54,33 @@ export const Deck = () => {
                 problems: [
                     {
                         description: "Personalization at Scale is Hard",
-                        emoji: "❌"
+                        emoji: "❌",
                     },
                     {
-                        description: "63% Struggle with Tailored Experiences [1]",
+                        description:
+                            "63% Struggle with Tailored Experiences [1]",
                         emoji: "📉",
-                        citation: "[1] Digital Marketing Executive Survey, 2023"
-                    }
-                ]
+                        citation:
+                            "[1] Digital Marketing Executive Survey, 2023",
+                    },
+                ],
             },
             {
                 type: "SOLUTION",
                 title: "Our Solution",
                 description: "Automated Personalized Sales Decks",
-                emoji: "✅"
+                emoji: "✅",
             },
             {
                 type: "EXPLANATION",
-                steps: [
+                explanations: [
                     {
                         title: "How It Works",
-                        description: null,
-                        emoji: "⚙️"
-                    }
-                ]
+                        description: '',
+                        gender: 'male',
+                        emoji: "⚙️",
+                    },
+                ],
             },
             {
                 type: "FEATURES",
@@ -81,84 +89,86 @@ export const Deck = () => {
                     {
                         title: "Automated Personalization",
                         emoji: "🛠️",
-                        description: null
+                        description: null,
                     },
                     {
                         title: "AI-Driven Insights",
                         emoji: "🤖",
-                        description: null
+                        description: null,
                     },
                     {
                         title: "Lead Scoring",
                         emoji: "🎯",
-                        description: null
-                    }
-                ]
+                        description: null,
+                    },
+                ],
             },
             {
                 type: "BENEFITS",
                 title: "Benefits",
-                features: [
+                benefits: [
                     {
-                        name: "Increase Engagement",
+                        title: "Increase Engagement",
                         emoji: "🚀",
-                        description: null
+                        description: null,
                     },
                     {
-                        name: "Boost Efficiency",
+                        title: "Boost Efficiency",
                         emoji: "⏱️",
-                        description: null
+                        description: null,
                     },
                     {
-                        name: "Gain Competitive Edge",
+                        title: "Gain Competitive Edge",
                         emoji: "🥇",
-                        description: null
-                    }
-                ]
+                        description: null,
+                    },
+                ],
             },
             {
                 type: "BENEFITS",
                 title: "Market Opportunity",
-                features: [
+                benefits: [
                     {
                         name: "Growing Demand",
                         emoji: "📈",
                         description: "Market to Reach $2.7B by 2027 [2]",
-                        citation: "[2] Personalization Software Market Report, 2022"
+                        citation:
+                            "[2] Personalization Software Market Report, 2022",
                     },
                     {
                         name: "AI in Sales",
                         emoji: "🤖",
                         description: "AI Boosts Conversion Rates up to 79% [3]",
-                        citation: "[3] AI in Sales Productivity Study, 2023"
-                    }
-                ]
+                        citation: "[3] AI in Sales Productivity Study, 2023",
+                    },
+                ],
             },
             {
                 type: "BENEFITS",
                 title: "Competitive Edge",
-                features: [
+                benefits: [
                     {
-                        name: "Limitations of Current Tools",
+                        title: "Limitations of Current Tools",
                         emoji: "🔧",
-                        description: null
+                        description: null,
                     },
                     {
-                        name: "CaiRO's Unique Position",
+                        title: "CaiRO's Unique Position",
                         emoji: "🚀",
-                        description: null
-                    }
-                ]
+                        description: null,
+                    },
+                ],
             },
             {
                 type: "EXPLANATION",
-                steps: [
+                explanations: [
                     {
                         title: "Our Team",
-                        description: null,
-                        emoji: "👥"
-                    }
-                ]
+                        description: '',
+                        emoji: "👥",
+                        gender: 'male'
+                    },
+                ],
             },
             {
                 type: "TESTIMONIALS",
@@ -167,22 +177,42 @@ export const Deck = () => {
                         firstName: "Alex",
                         lastName: "Johnson",
                         testimonial: "38% Increase in Replies [4]",
-                        citation: "[4] Internal Pilot Program Data, 2023"
-                    }
-                ]
+                        citation: "[4] Internal Pilot Program Data, 2023",
+                        gender: 'male'
+                    },
+                ],
             },
             {
                 type: "CTA",
                 headline: "Experience CaiRO in Action",
-                description: null,
-                link: "https://example.com/contact"
-            }
-        ]
+                description: '',
+                link: "https://example.com/contact",
+            },
+        ],
     }
 
+    useEffect(() => {
+        setDeck({
+            color: pre.color,
+            logoURL: "https://i.ibb.co/WBVCmzZ/SUNDAI-logo.png", // @ts-expect-error
+            list: pre.list.map((item) => {
+                return {
+                    ...item,
+                    component: {
+                        ...item,
+                        logoURL: "https://i.ibb.co/WBVCmzZ/SUNDAI-logo.png",
+                        color: pre.color,
+                    },
+                }
+            }),
+        })
+    }, [])
 
     const fetchData = async () => {
-        const { data: { data }, error } = await supabase
+        const {
+            data: { data },
+            error,
+        } = await supabase
             .from("decks")
             .select("*")
             .eq("uuid", router.query.id)
@@ -211,7 +241,7 @@ export const Deck = () => {
     }
 
     useEffect(() => {
-        fetchData()
+        // fetchData()
     }, [])
 
     return (
@@ -221,8 +251,8 @@ export const Deck = () => {
                     switch (item.type) {
                         case "HERO":
                             return <Hero {...item.component} {...item} />
-                        case "CTA":
-                            return <CTA {...item.component} {...item} />
+                        // case "CTA":
+                        //     return <CTA {...item.component} {...item} />
                         case "BENEFITS":
                             return <Benefits {...item.component} {...item} />
                         case "EXPLANATION":
@@ -239,4 +269,3 @@ export const Deck = () => {
         </div>
     )
 }
-
