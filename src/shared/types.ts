@@ -36,6 +36,7 @@ type Testimonial = {
 }
 
 export type SchemaType = {
+    color: string
     logoURL: string
     list: (CTA | Hero | Benefits | Explanation | Features | Testimonial)[]
 }

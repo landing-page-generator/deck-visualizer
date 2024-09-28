@@ -1,8 +1,8 @@
-import { TestimonialProps as TestimonialsProps } from './Testimonials.types'
+import { TestimonialProps } from './Testimonials.types'
 
-import styles from './Explanation.module.css'
+import styles from './Testimonials.module.css'
 
-export const Testimonials = (props: TestimonialsProps) => {
+export const Testimonials = (props: TestimonialProps) => {
     const {
         testimonials
     } = props

@@ -9,8 +9,23 @@ import { SchemaType } from "@/shared/types"
 import styles from "./styles.module.css"
 const Page = () => {
     const data: SchemaType = {
+        color: "red",
         logoURL: "",
-        list: [],
+        list: [
+            {
+                type: "BENEFITS",
+                component: {
+                    logoURL: "",
+                    benefits: [
+                        {
+                            description: "Benefit 1 description",
+                            emoji: "🚀",
+                            title: "Benefit 1",
+                        },
+                    ],
+                },
+            },
+        ],
     }
     return (
         <div className={styles.root}>
