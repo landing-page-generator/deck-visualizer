@@ -63,7 +63,7 @@ export const Deck = () => {
                             return <Explanation {...item.component} {...item} />
                         case "FEATURES":
                             return <Features {...item.component} {...item} />
-                        case "TESTIMONIAL":
+                        case "TESTIMONIALS":
                             return (
                                 <Testimonials {...item.component} {...item} />
                             )

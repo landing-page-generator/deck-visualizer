@@ -8,4 +8,5 @@ type BenefitType = {
 
 export type BenefitsProps = Shared & {
     benefits: BenefitType[]
+    title: string
 }

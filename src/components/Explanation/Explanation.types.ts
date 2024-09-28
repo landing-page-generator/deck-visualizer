@@ -7,5 +7,5 @@ type ExplanationType = {
 }
 
 export type ExplanationProps = Shared & {
-    steps: ExplanationType[]
+    explanations: ExplanationType[]
 }

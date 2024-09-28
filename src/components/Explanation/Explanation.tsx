@@ -1,5 +1,4 @@
 import { ExplanationProps } from "./Explanation.types"
-import Image from "next/image"
 
 import styles from "./Explanation.module.css"
 import { LEFT_BORDER_WIDTH } from "@/shared/constants"
@@ -16,7 +15,13 @@ export const Explanation = (props: ExplanationProps) => {
         >
             <div className={styles.header}>
                 <p className={styles.title}>How it works</p>
-                <img className={styles.logo} src={logoURL} alt="Logo" width={400} height={50} />
+                <img
+                    className={styles.logo}
+                    src={logoURL}
+                    alt="Logo"
+                    width={400}
+                    height={50}
+                />
             </div>
             <div className={styles.cards}>
                 {explanations.map((explanation, index) => {
