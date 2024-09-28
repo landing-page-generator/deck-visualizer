@@ -1,11 +1,10 @@
 import { Shared } from '@/shared/types'
 
 type TestimonialType = {
-    title: string
-    description: string
-    emoji: string
+    firstName: string
+    lastName: string
+    testimonial: string
 }
-
 export type TestimonialProps = Shared & {
     testimonials: TestimonialType[]
 }

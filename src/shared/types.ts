@@ -31,7 +31,7 @@ type Features = {
 }
 
 type Testimonial = {
-    type: "TESTIMONIAL",
+    type: "TESTIMONIALS",
     component: TestimonialProps
 }
 

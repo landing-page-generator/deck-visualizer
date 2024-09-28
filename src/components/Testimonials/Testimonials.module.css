@@ -1,15 +1,71 @@
 .container {
-
+    height: 678px;
+    background-color: white;
+    padding: 20px 40px;
+    box-sizing: border-box;
 }
 
-.testimonialContainer {
-
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.testimonialTitle {
-
+.logo {
+    width: 140px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.testimonialDescription {
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+}
 
+.explanationTitle {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.explanationDescription {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.cards {
+    column-gap: 30px;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.profile {
+    border-radius: 100%;
+}
+
+.emoji {
+    width: 100%;
+    text-align: left;
+    font-size: 55px;
+}
+
+.card {
+    height: 365px;
+    box-shadow: var(--shadow1);
+    border-radius: 47px;
+    display: flex;
+    row-gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
 }

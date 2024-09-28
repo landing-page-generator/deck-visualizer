@@ -75,7 +75,7 @@ const Page = () => {
                                     {...item}
                                 />
                             )
-                        case "TESTIMONIAL":
+                        case "TESTIMONIALS":
                             return (
                                 <Testimonials
                                     color={data.color}

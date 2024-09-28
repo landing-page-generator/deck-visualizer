@@ -31,6 +31,7 @@
         },
         {
             "type": "BENEFITS",
+            "title": "BENEFITS TITLE",
             "benefits": [
                 {
                     "name": "Enhanced Safety",
@@ -56,7 +57,7 @@
         },
         {
             "type": "EXPLANATION",
-            "steps": [
+            "explanations": [
                 {
                     "title": "Step 1: Onboarding and Training",
                     "description": "We provide comprehensive onboarding and training to ensure your team is ready to use our solutions effectively.",
@@ -86,11 +87,6 @@
                     "firstName": "Michael",
                     "lastName": "Johnson",
                     "testimonial": "The real-time data integration has been a game-changer for our team. We can't imagine working without it now."
-                },
-                {
-                    "firstName": "Sarah",
-                    "lastName": "Lee",
-                    "testimonial": "The communication enhancements have made a world of difference in our coordination and efficiency."
                 }
             ]
         },
