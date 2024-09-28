@@ -4,13 +4,11 @@ import styles from './Explanation.module.css'
 
 export const Explanation = (props: ExplanationProps) => {
     const {
-        title,
         explanations
     } = props
 
     return (
         <div className={styles.container}>
-            <p className={styles.title}>{title}</p>
             {explanations.map((explanation) => {
                 return (
                     <div className={styles.explanationContainer}>

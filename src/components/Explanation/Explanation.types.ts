@@ -5,6 +5,5 @@ type ExplanationType = {
 }
 
 export type ExplanationProps = {
-    title: string
     explanations: ExplanationType[]
 }

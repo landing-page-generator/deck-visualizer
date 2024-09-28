@@ -5,6 +5,5 @@ type BenefitType = {
 }
 
 export type BenefitsProps = {
-    title: string
     benefits: BenefitType[]
 }
