@@ -8,75 +8,25 @@ import { SchemaType } from "@/shared/types"
 
 import styles from "./styles.module.css"
 
-import sample from './schema.json'
+import sample from "./schema.json"
+import { supabase } from "@/shared/supabase"
+import { useEffect, useState } from "react"
+import { useRouter } from "next/router"
+import dynamic from "next/dynamic"
+
+const Deck = dynamic(
+    async () => {
+        return import("../modules/Deck").then((module) => {
+            return module.Deck
+        })
+    },
+    {
+        ssr: false,
+    },
+)
 
 const Page = () => {
-    const data: SchemaType = {
-        color: sample.color,
-        logoURL: sample.logoURL, // @ts-expect-error
-        list: sample.list.map((item) => {
-            return {
-                ...item,
-                component: {
-                    ...item,
-                    logoURL: sample.logoURL,
-                },
-            }
-        })
-    }
-
-    return (
-        <div className={styles.root}>
-            <div className={styles.container}>
-                {data.list.map((item) => {
-                    switch (item.type) {
-                        case "HERO":
-                            return (
-                                <Hero
-                                    {...item.component}
-                                    {...item}
-                                />
-                            )
-                        case "CTA":
-                            return (
-                                <CTA
-                                    {...item.component}
-                                    {...item}
-                                />
-                            )
-                        case "BENEFITS":
-                            return (
-                                <Benefits
-                                    {...item.component}
-                                    {...item}
-                                />
-                            )
-                        case "EXPLANATION":
-                            return (
-                                <Explanation
-                                    {...item.component}
-                                    {...item}
-                                />
-                            )
-                        case "FEATURES":
-                            return (
-                                <Features
-                                    {...item.component}
-                                    {...item}
-                                />
-                            )
-                        case "TESTIMONIAL":
-                            return (
-                                <Testimonials
-                                    {...item.component}
-                                    {...item}
-                                />
-                            )
-                    }
-                })}
-            </div>
-        </div>
-    )
+    return <Deck />
 }
 
 export default Page
