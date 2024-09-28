@@ -15,9 +15,6 @@ export const Deck = () => {
     const router = useRouter()
     const [deck, setDeck] = useState<SchemaType | null>(null)
 
-    console.log("==================================")
-    console.log(router.query.id)
-
     const fetchData = async () => {
         const { data: { data }, error } = await supabase
             .from("decks")
@@ -29,6 +26,7 @@ export const Deck = () => {
             console.error("Error fetching data:", error)
         } else {
             console.log("Data:", data)
+
             setDeck({
                 color: data.color,
                 logoURL: data.logoURL, // @ts-expect-error
@@ -37,7 +35,8 @@ export const Deck = () => {
                         ...item,
                         component: {
                             ...item,
-                            logoURL: item.logoURL,
+                            logoURL: data.logoURL,
+                            color: data.color,
                         },
                     }
                 }),
