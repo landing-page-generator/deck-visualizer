@@ -40,3 +40,8 @@ export type SchemaType = {
     logoURL: string
     list: (CTA | Hero | Benefits | Explanation | Features | Testimonial)[]
 }
+
+export type Shared = {
+    logoURL: string
+    color: string
+}

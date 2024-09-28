@@ -7,21 +7,34 @@ import { Testimonials } from "@/components/Testimonials"
 import { SchemaType } from "@/shared/types"
 
 import styles from "./styles.module.css"
+
 const Page = () => {
     const data: SchemaType = {
-        color: "red",
-        logoURL: "",
+        color: "#6fd7ef",
+        logoURL:
+            "https://www.offsight.com/_next/static/media/logo.18dc692d.svg",
         list: [
             {
-                type: "BENEFITS",
+                type: "EXPLANATION",
                 component: {
                     logoURL: "",
-                    benefits: [
+                    color: '#6fd7ef',
+                    explanations: [
                         {
-                            description: "Benefit 1 description",
                             emoji: "🚀",
-                            title: "Benefit 1",
+                            title: "Title 1",
+                            description: "Sentient Insights gathers social media data from various platforms",
                         },
+                        {
+                            emoji: "🚀",
+                            title: "Title 2",
+                            description: "Sentient Insights gathers social media data from various platforms",
+                        },
+                        {
+                            emoji: "🚀",
+                            title: "Title 3",
+                            description: "Sentient Insights gathers social media data from various platforms",
+                        }
                     ],
                 },
             },
@@ -36,6 +49,7 @@ const Page = () => {
                             return (
                                 <Hero
                                     {...item.component}
+                                    {...item}
                                     logoURL={data.logoURL}
                                 />
                             )
@@ -44,6 +58,7 @@ const Page = () => {
                                 <CTA
                                     {...item.component}
                                     logoURL={data.logoURL}
+                                    {...item}
                                 />
                             )
                         case "BENEFITS":
@@ -51,6 +66,7 @@ const Page = () => {
                                 <Benefits
                                     {...item.component}
                                     logoURL={data.logoURL}
+                                    {...item}
                                 />
                             )
                         case "EXPLANATION":
@@ -58,6 +74,7 @@ const Page = () => {
                                 <Explanation
                                     {...item.component}
                                     logoURL={data.logoURL}
+                                    {...item}
                                 />
                             )
                         case "FEATURES":
@@ -65,6 +82,7 @@ const Page = () => {
                                 <Features
                                     {...item.component}
                                     logoURL={data.logoURL}
+                                    {...item}
                                 />
                             )
                         case "TESTIMONIAL":
@@ -72,6 +90,7 @@ const Page = () => {
                                 <Testimonials
                                     {...item.component}
                                     logoURL={data.logoURL}
+                                    {...item}
                                 />
                             )
                     }

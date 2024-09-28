@@ -1,5 +1,13 @@
+:root {
+    --shadow1: 0px 20px 40px 0px #00000021;
+}
+
 body {
     margin: 0;
     height: 100%;
     background: #2E2E2E;
+}
+
+p {
+    margin: 0;
 }

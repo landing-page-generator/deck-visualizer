@@ -1,6 +1,7 @@
-export type CTAPRops = {
+import { Shared } from '@/shared/types'
+
+export type CTAPRops = Shared & {
     headline: string
-    logoURL: string
     description: string
     link: string
 }
