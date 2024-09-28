@@ -12,6 +12,7 @@ export const CTA = (props: CTAPRops) => {
 
     return (
         <div className={styles.container}>
+            <div className={styles.logo} style={{backgroundImage: `url(${logoURL})`}}></div>
             <p className={styles.headline} style={{ color }}>
                 {headline}
             </p>

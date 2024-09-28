@@ -33,3 +33,11 @@
     text-decoration: none;
     font-size: 20px;
 }
+
+.logo {
+    width: 140px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}

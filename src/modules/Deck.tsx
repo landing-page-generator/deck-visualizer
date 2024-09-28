@@ -29,13 +29,13 @@ export const Deck = () => {
 
             setDeck({
                 color: data.color,
-                logoURL: data.logoURL, // @ts-expect-error
+                logoURL: "https://i.ibb.co/WBVCmzZ/SUNDAI-logo.png", // @ts-expect-error
                 list: data.list.map((item) => {
                     return {
                         ...item,
                         component: {
                             ...item,
-                            logoURL: data.logoURL,
+                            logoURL: "https://i.ibb.co/WBVCmzZ/SUNDAI-logo.png",
                             color: data.color,
                         },
                     }
