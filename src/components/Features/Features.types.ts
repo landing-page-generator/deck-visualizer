@@ -6,5 +6,6 @@ type FeatureType = {
 
 export type FeaturesProps = {
     title: string
+    logoURL: string
     features: FeatureType[]
 }
