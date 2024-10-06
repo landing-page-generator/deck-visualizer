@@ -3,6 +3,8 @@
     background-color: white;
     padding: 20px 40px;
     box-sizing: border-box;
+    page-break-after: always;
+    page-break-inside: avoid;
 }
 
 .header {

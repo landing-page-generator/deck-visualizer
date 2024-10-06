@@ -5,6 +5,8 @@
     position: relative;
     flex-direction: column;
     justify-content: space-between;
+    page-break-after: always;
+    page-break-inside: avoid;
 }
 
 .header {

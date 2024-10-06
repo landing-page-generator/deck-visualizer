@@ -3,6 +3,8 @@
     display: flex;
     background: white;
     position: relative;
+    page-break-after: always;
+    page-break-inside: avoid;
 }
 
 .text {

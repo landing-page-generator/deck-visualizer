@@ -9,6 +9,8 @@
     flex-direction: column;
     row-gap: 100px;
     box-sizing: border-box;
+    page-break-after: always;
+    page-break-inside: avoid;
 }
 
 .headline {
