@@ -4,7 +4,7 @@ Frontend for AI deck generator
 
 Deployed as [Deck Visualizer](https://deck-visualizer.onrender.com/)
 
-Hacked on [Agents Hackathon @ MIT](https://app.agihouse.org/events/Agents-Hackathon-Powered-by-Jamba-20240928), Sep 28, 2024, by @vuki656 and @gabaj.
+Hacked on [Agents Hackathon @ MIT](https://app.agihouse.org/events/Agents-Hackathon-Powered-by-Jamba-20240928), Sep 28, 2024, by [@vuki656](https://github.com/vuki656) and [@gabaj](https://github.com/gabaj).
 
 ---
 
