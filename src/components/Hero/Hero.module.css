@@ -52,8 +52,8 @@
 
 .imageforeground {
     flex: 1;
-    height: 100%;
-    size: cover;
+    max-width: 50%;
+    object-fit: cover;
 }
 
 .ribbon {
