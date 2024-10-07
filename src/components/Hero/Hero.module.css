@@ -50,6 +50,12 @@
     background-size: cover;
 }
 
+.imageforeground {
+    flex: 1;
+    height: 100%;
+    size: cover;
+}
+
 .ribbon {
     position: absolute;
     bottom: 0;
