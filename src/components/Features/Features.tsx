@@ -15,9 +15,6 @@ export const Features = (props:  FeaturesProps) => {
         <div className={styles.container}>
             <div className={styles.header}>
                 <p className={styles.title}>{title}</p>
-                {/* <div className={styles.logo} style={{
-                    backgroundImage: `url(${logoURL})`
-                }}></div> */}
                 <img className={styles.logo} src={logoURL} alt="Logo" width={400} height={50} />
             </div>
             <div className={styles.features}>
